@@ -1,0 +1,2 @@
+dao.stoklarDAO
+dao.StokDAO

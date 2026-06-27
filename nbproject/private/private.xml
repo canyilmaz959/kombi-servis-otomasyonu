@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/arizakayit.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/login.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/musterikayit.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/stoklar.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/main.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/arizaguncelle.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/devamedenarizalar.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/Util/DBconnection.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/Model/Kullanici.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/Model/Musteri.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/Model/Stok.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/Model/Ariza.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/Model/StokHareket.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/DAO/arizaDAO.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/DAO/kullaniciDAO.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/DAO/musteriDAO.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/DAO/stoklarDAO.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/Util/sessionmanager.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/musterigecmis.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/ui/personelkayit.java</file>
+            <file>file:/C:/Users/muham/OneDrive/Belgeler/NetBeansProjects/kombi/src/Design/Tasarim.java</file>
+        </group>
+    </open-files>
+</project-private>
