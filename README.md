@@ -58,6 +58,7 @@ Projede kullanıcı giriş sistemi, rol tabanlı yetkilendirme, müşteri kayıt
 - Java Swing
 - MySQL
 - JDBC
+- Docker (MySQL Container)
 - NetBeans
 - DAO Pattern
 - MVC yaklaşımı
@@ -195,4 +196,4 @@ Bu proje eğitim amacıyla geliştirilmiştir.
 
 Bilgisayar Programcılığı Öğrencisi
 
-Java • Swing • MySQL • JDBC
+Java • Swing • JDBC • MySQL • Docker
