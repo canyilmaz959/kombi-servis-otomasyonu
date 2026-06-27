@@ -102,14 +102,22 @@ src
 
 # Veritabanı
 
-Projede MySQL kullanılmaktadır.
+Projede veritabanı olarak **MySQL** kullanılmaktadır.
 
-Bağlantı ayarları:
+Veritabanı geliştirme sürecinde **Docker üzerinde çalışan bir MySQL container'ı** kullanılmıştır. Uygulama, JDBC aracılığıyla bu veritabanına bağlanmaktadır.
 
-```
+### Bağlantı Bilgileri
+
+```text
 Host: localhost
+Port: 3306
 Database: mydb
 ```
+
+DB bağlantısı `DBconnection.java` dosyası üzerinden yapılandırılmaktadır.
+
+> **Not:** Veritabanı Docker üzerinde çalıştırılmış olsa da, uygulama standart bir MySQL sunucusuna bağlanacak şekilde tasarlanmıştır. Gerekli bağlantı bilgileri `DBconnection.java` dosyasından kendi ortamınıza göre düzenlenebilir.
+
 
 DB bağlantısı `DBconnection.java` dosyası üzerinden yapılmaktadır.
 
