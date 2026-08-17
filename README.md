@@ -129,7 +129,7 @@ DB bağlantısı `DBconnection.java` dosyası üzerinden yapılmaktadır.
 1. Repository'i klonlayın.
 
 ```
-git clone https://github.com/canyilmaz959/KombiServisPro.git
+git clone https://github.com/canyilmaz959/kombi-servis-otomasyonu
 ```
 
 2. MySQL üzerinde gerekli veritabanını oluşturun.
