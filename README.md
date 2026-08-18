@@ -1,74 +1,110 @@
 # 🔧 KombiServis Pro
 
-KombiServis Pro, kombi servis firmalarının müşteri, personel, arıza ve stok süreçlerini dijital ortamda yönetebilmesi için geliştirilmiş Java Swing tabanlı masaüstü otomasyon sistemidir.
+KombiServis Pro, kombi teknik servis firmalarının müşteri, personel, arıza, stok ve raporlama süreçlerini dijital ortamda merkezi olarak yönetebilmesi amacıyla geliştirilmiş **Java Swing** tabanlı bir masaüstü otomasyon sistemidir.
 
-Projede kullanıcı giriş sistemi, rol tabanlı yetkilendirme, müşteri kayıtları, arıza takip sistemi, stok yönetimi ve PDF raporlama gibi temel servis otomasyonu özellikleri bulunmaktadır.
-
----
-
-# Özellikler
-
-## Kullanıcı Yönetimi
-
-- Kullanıcı giriş sistemi
-- Admin ve Personel rol desteği
-- Aktif/Pasif kullanıcı kontrolü
-- Oturum (Session) yönetimi
+Rol tabanlı yetkilendirme mimarisi, parametreli veri güvenliği, dinamik stok ve arıza takibi ile otomatik PDF servis raporu üretimi gibi servis operasyonlarının tüm aşamalarını kapsar.
 
 ---
 
-## Müşteri Yönetimi
+## 📸 Ekran Görüntüleri
 
-- Yeni müşteri ekleme
-- Müşteri bilgilerini güncelleme
-- Kombi bilgilerini kayıt altına alma
-- Müşteri geçmişini görüntüleme
+### 1. Giriş & Yetkilendirme
+Personel ve admin kullanıcılar için güvenli giriş ekranı.
 
----
-
-## Arıza Yönetimi
-
-- Yeni arıza kaydı oluşturma
-- Devam eden arızaları listeleme
-- Arıza durumu güncelleme
-- Çözüm önerileri ekleme
-- Teknisyen atama
+![Personel Giriş Ekranı](screenshots/login.png)
 
 ---
 
-## Stok Yönetimi
+### 2. Müşteri Yönetimi
+Yeni müşteri kaydı ekleme, mevcut bilgileri güncelleme ve silme işlemleri.
 
-- Yeni stok ekleme
-- Parça yönetimi
-- Minimum stok takibi
-- Marka ve model bazlı filtreleme
-
----
-
-## Raporlama
-
-- PDF servis raporu oluşturma
-- Hazırlanan raporları görüntüleme
+| Müşteri Kayıt & Düzenleme | Müşteri Silme İşlemi |
+| :---: | :---: |
+| ![Müşteri Ekleme](screenshots/musteri-ekle.png) | ![Müşteri Silme](screenshots/musteri-sil.png) |
 
 ---
 
-# Kullanılan Teknolojiler
+### 3. Personel Yönetimi
+Teknisyen ve personel bilgilerinin kaydedilmesi ve otomatik kullanıcı oluşturma.
 
-- Java
-- Java Swing
-- MySQL
-- JDBC
-- Docker (MySQL Container)
-- NetBeans
-- DAO Pattern
-- MVC yaklaşımı
-- iText PDF (PDF oluşturma)
+![Personel Kaydı](screenshots/personel-kayit.png)
 
 ---
 
-# Proje Yapısı
+### 4. Arıza Takip & Yönetim
+Yeni arıza formu doldurma, teknisyen atama, arıza durum takibi ve servis tamamlama süreçleri.
 
-```
+| Yeni Arıza Kaydı Oluşturma | Devam Eden Arızalar Listesi |
+| :---: | :---: |
+| ![Arıza Kaydı](screenshots/ariza-kayit.png) | ![Arıza Listesi](screenshots/ariza-listesi.png) |
+
+| Arıza Durum Güncelleme & Çözüm |
+| :---: |
+| ![Arıza Güncelleme](screenshots/ariza-guncelle.png) |
+
+---
+
+### 5. Stok Yönetimi
+Kombi ve yedek parça stoklarının durum (sıfır/2. el/arızalı), marka, model ve seri no bazlı takibi.
+
+![Stok Yönetimi](screenshots/stok-yonetimi.png)
+
+---
+
+### 6. Silinen Kayıtlar & Geri Yükleme
+Silinen müşteri ve personel verilerini arşivleme ve gerektiğinde sisteme geri yükleme (Soft-delete).
+
+![Silinenler ve Müşteri Geçmişi](screenshots/musteri-gecmisi.png)
+
+---
+
+### 7. PDF Raporlama Sistemi
+Tamamlanan arıza kayıtları için iText PDF kütüphanesi ile otomatik servis teslim raporu üretimi.
+
+![PDF Servis Raporu](screenshots/servis-raporu.png)
+
+---
+
+## ✨ Özellikler
+
+* **Kullanıcı Yönetimi**
+  * Admin ve Personel rol tabanlı yetkilendirme
+  * Oturum (Session) ve durum kontrolü
+* **Müşteri Yönetimi**
+  * Yeni müşteri ve kombi bilgileri kaydı
+  * Bilgi güncelleme, arama ve geçmiş takibi
+* **Arıza Yönetimi**
+  * Detaylı arıza formu oluşturma ve teknisyen atama
+  * Devam eden arızaların durum filtrelemesi
+  * Yapılan işlemler ve çözüm önerileri kaydı
+* **Stok Yönetimi**
+  * Parça ve kombi bazında stok giriş/çıkışı
+  * 2. El / Sıfır / Arızalı durum kontrolü
+  * Marka ve model bazlı filtreleme
+* **Raporlama & Çıktı**
+  * Tamamlanan servisler için iText PDF destekli otomatik teknik servis teslim raporu
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+* **Programlama Dili:** Java
+* **Arayüz (GUI):** Java Swing
+* **Veritabanı:** MySQL
+* **Veri Erişimi:** JDBC (PreparedStatement)
+* **Konteynerizasyon:** Docker (MySQL Container)
+* **Raporlama Kütüphanesi:** iText PDF
+* **Mimari / Tasarım:** MVC<img width="1653" height="766" alt="image7" src="https://github.com/user-attachments/assets/f2cb3518-bd6a-4920-a007-30f7d95a143f" />
+<img width="490" height="392" alt="imagec" src="https://github.com/user-attachments/assets/4e2deb66-563a-48f3-ac92-b31bf6ddef66" />
+<img width="490" height="392" alt="imagec" src="https://github.com/user-attachments/assets/7848a7ac-642a-49bd-8a13-bcf6f1c2aeae" />
+ & DAO (Data Access Object) Pattern
+* **Geliştirme Ortamı:** NetBeans / IntelliJ IDEA
+
+---
+
+## 📁 Proje Mimarisi
+
+```text
 src
 │
 ├── DAO
@@ -96,104 +132,5 @@ src
 │   ├── DBconnection.java
 │   └── SessionManager.java
 │
-└── Design
-```
-
----
-
-# Veritabanı
-
-Projede veritabanı olarak **MySQL** kullanılmaktadır.
-
-Veritabanı geliştirme sürecinde **Docker üzerinde çalışan bir MySQL container'ı** kullanılmıştır. Uygulama, JDBC aracılığıyla bu veritabanına bağlanmaktadır.
-
-### Bağlantı Bilgileri
-
-```text
-Host: localhost
-Port: 3306
-Database: mydb
-```
-
-DB bağlantısı `DBconnection.java` dosyası üzerinden yapılandırılmaktadır.
-
-> **Not:** Veritabanı Docker üzerinde çalıştırılmış olsa da, uygulama standart bir MySQL sunucusuna bağlanacak şekilde tasarlanmıştır. Gerekli bağlantı bilgileri `DBconnection.java` dosyasından kendi ortamınıza göre düzenlenebilir.
-
-
-DB bağlantısı `DBconnection.java` dosyası üzerinden yapılmaktadır.
-
----
-
-# Kurulum
-
-1. Repository'i klonlayın.
-
-```
-git clone https://github.com/canyilmaz959/kombi-servis-otomasyonu
-```
-
-2. MySQL üzerinde gerekli veritabanını oluşturun.
-
-3. `DBconnection.java` içerisindeki;
-
-- URL
-- Kullanıcı adı
-- Şifre
-
-bilgilerini kendi sisteminize göre düzenleyin.
-
-4. Projeyi NetBeans veya IntelliJ IDEA ile açın.
-
-5. Gerekli JDBC Driver'ını ekleyin.
-
-6. Çalıştırın.
-
----
-
-# Ekranlar
-
-- Giriş Ekranı
-- Ana Menü
-- Müşteri Kayıt
-- Personel Kayıt
-- Arıza Kayıt
-- Devam Eden Arızalar
-- Müşteri Geçmişi
-- Stok Yönetimi
-
----
-
-# Güvenlik
-
-- Parametreli SQL sorguları (PreparedStatement)
-- Rol tabanlı erişim kontrolü
-- Session yönetimi
-
----
-
-# Geliştirilebilecek Özellikler
-
-- Şifrelerin BCrypt ile hashlenmesi
-- Log sistemi
-- Dashboard
-- Grafiksel raporlar
-- Bildirim sistemi
-- E-posta entegrasyonu
-- Çoklu kullanıcı desteği
-- REST API desteği
-
----
-
-# Lisans
-
-Bu proje eğitim amacıyla geliştirilmiştir.
-
----
-
-# Geliştirici
-
-**Can Yılmaz**
-
-Bilgisayar Programcılığı Öğrencisi
-
-Java • Swing • JDBC • MySQL • Docker
+└── Design<img width="490" height="392" alt="imagec" src="https://github.com/user-attachments/assets/e6014daf-ef7e-45ba-ab7e-501a8d015446" />
+<img width="490" height="392" alt="imagec" src="https://github.com/user-attachments/assets/838dcb3f-f317-4989-82b8-408dd599cef2" />
