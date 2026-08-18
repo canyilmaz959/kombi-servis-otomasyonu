@@ -94,10 +94,7 @@ Tamamlanan arıza kayıtları için iText PDF kütüphanesi ile otomatik servis 
 * **Veri Erişimi:** JDBC (PreparedStatement)
 * **Konteynerizasyon:** Docker (MySQL Container)
 * **Raporlama Kütüphanesi:** iText PDF
-* **Mimari / Tasarım:** MVC<img width="1653" height="766" alt="image7" src="https://github.com/user-attachments/assets/f2cb3518-bd6a-4920-a007-30f7d95a143f" />
-<img width="490" height="392" alt="imagec" src="https://github.com/user-attachments/assets/4e2deb66-563a-48f3-ac92-b31bf6ddef66" />
-<img width="490" height="392" alt="imagec" src="https://github.com/user-attachments/assets/7848a7ac-642a-49bd-8a13-bcf6f1c2aeae" />
- & DAO (Data Access Object) Pattern
+* **Mimari / Tasarım:** MVC & DAO (Data Access Object) Pattern
 * **Geliştirme Ortamı:** NetBeans / IntelliJ IDEA
 
 ---
@@ -132,5 +129,63 @@ src
 │   ├── DBconnection.java
 │   └── SessionManager.java
 │
-└── Design<img width="490" height="392" alt="imagec" src="https://github.com/user-attachments/assets/e6014daf-ef7e-45ba-ab7e-501a8d015446" />
-<img width="490" height="392" alt="imagec" src="https://github.com/user-attachments/assets/838dcb3f-f317-4989-82b8-408dd599cef2" />
+└── Design
+```
+
+---
+
+## 🗄️ Veritabanı Yapılandırması
+
+Projede veri tabanı olarak **MySQL** kullanılmıştır. Geliştirme sürecinde Docker üzerinde izole bir container içerisinde çalıştırılmıştır.
+
+* **Host:** `localhost`
+* **Port:** `3306`
+* **Database:** `mydb`
+
+> **Not:** Uygulama standart JDBC bağlantısıyla çalışır. `Util/DBconnection.java` dosyasındaki URL, kullanıcı adı ve şifre bilgilerini yerel MySQL ortamınıza göre düzenleyebilirsiniz.
+
+---
+
+## 🚀 Kurulum & Çalıştırma
+
+1. **Depoyu Klonlayın:**
+   ```bash
+   git clone [https://github.com/canyilmaz959/kombi-servis-otomasyonu.git](https://github.com/canyilmaz959/kombi-servis-otomasyonu.git)
+   ```
+2. **Veritabanını Hazırlayın:** MySQL sunucunuzda veritabanı şemasını içe aktarın.
+3. **Bağlantı Ayarları:** `src/Util/DBconnection.java` dosyasındaki veritabanı kimlik bilgilerini güncelleyin.
+4. **IDE ile Açın:** Projeyi NetBeans veya IntelliJ IDEA ile içe aktarın.
+5. **Kütüphaneleri Ekleyin:** MySQL JDBC Driver ve iText PDF kütüphanelerinin `Classpath`'e dahil olduğundan emin olun.
+6. **Çalıştırın:** Projeyi derleyip `Login` ekranı üzerinden başlatın.
+
+---
+
+## 🔒 Güvenlik
+
+* **SQL Injection Koruması:** Tüm veritabanı sorgularında `PreparedStatement` kullanımı.
+* **Yetki Kontrolü:** Rol bazlı menü ve ekran kısıtlamaları.
+* **Oturum Yönetimi:** `SessionManager` ile aktif kullanıcı doğrulama.
+
+---
+
+## 📌 Yol Haritası (Geliştirilebilecek Özellikler)
+
+* [ ] Şifrelerin BCrypt ile hashlenerek saklanması
+* [ ] Detaylı sistem loglama mekanizması
+* [ ] Dashboard ve grafiksel istatistik paneli
+* [ ] SMS / E-posta servis bildirim entegrasyonu
+* [ ] REST API desteği ile mobil uygulama bağlantısı
+
+---
+
+## 📄 Lisans
+
+Bu proje eğitim ve portfolyo amacıyla geliştirilmiştir.
+
+---
+
+## 👨‍💻 Geliştirici
+
+**Can Yılmaz**  
+*Bilgisayar Programcılığı*  
+`Java` • `Swing` • `JDBC` • `MySQL` • `Docker`
